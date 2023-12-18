@@ -74,11 +74,26 @@ h1 {
 .info .temp {
     flex: 1;
     text-align: center;
+
+}
+
+.vento img {
+    width: 75px;
 }
 
 .info .vento {
     flex: 1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .vento .tempDescription {
+    color: #777;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
 
 .tempTitulo,
@@ -93,11 +108,15 @@ h1 {
     color: #FFF;
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.tempInfo sup {
+.tempInfo sup,
+.tempInfoMax sup,
+.tempInfoMin sup {
     font-size: 15px;
     font-weight: normal;
+    margin-bottom: 25px;
 }
 
 .ventoInfo span {
@@ -105,15 +124,29 @@ h1 {
     font-weight: normal;
 }
 
+.tempTituloMax,
+.tempTituloMin {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.tempInfoMax,
+.tempInfoMin {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 .ventoArea {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border: 1px solid #FFF;
     border-radius: 50%;
     margin: auto;
-    margin-top: 20px;
-    padding-left: 25px;
-    padding-top: 25px;
+    padding-left: 17px;
+    padding-top: 17px;
 }
 
 .ventoPonto {
