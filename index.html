@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,14 @@
             <div class="temp">
                 <div class="tempTitulo">Temperatura</div>
                 <div class="tempInfo">-- <sup>ºC</sup></div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+
+                <div class="tempTituloMax">Máxima</div>
+                <div class="tempInfoMax">-- <sup>ºC</sup></div>
+
+                <div class="tempTituloMin">Mínima</div>
+                <div class="tempInfoMin">-- <sup>ºC</sup></div>
+
+
             </div>
             <div class="vento">
                 <div class="ventoTitulo">Vento</div>
@@ -32,6 +39,9 @@
                 <div class="ventoArea">
                     <div class="ventoPonto" style="transform: rotate(0deg)"></div>
                 </div>
+
+                <div class="tempDescription"></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Ícone do tempo atual" />
             </div>
         </div>
     </div>
