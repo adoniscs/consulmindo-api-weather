@@ -10,7 +10,7 @@ document.querySelector('.busca')
 
             const url = `
                 https://api.openweathermap.org/data/2.5/weather?q=
-                ${encodeURI(clearInput)}&appid=b87adb94624c0be4be773df14674c0c3&units=metric&lang=pt_br`;
+                ${encodeURI(clearInput)}&appid=${apiKey}&units=metric&lang=pt_br`;
 
             const result = await fetch(url); // faz a requisição e armazena o resultado em result
             const json = await result.json(); // transforma o resultado em JSON
